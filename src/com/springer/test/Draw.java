@@ -17,7 +17,7 @@ public class Draw {
 	// y or height is rows
 	public void drawCanvas(int width, int height) {
 		if(width ==0 || height ==0 ) {
-			System.out.print("invalid parameters for canvas");
+			System.out.println("invalid parameters for canvas");
 			return;
 		}
 
@@ -109,7 +109,7 @@ public class Draw {
 
 		if(deltax != 0 && deltay != 0) {
 			// seems like a diagonal line not supported yet
-			System.out.print("Not supported line format for "+ startPoint + " to " + endPoint);
+			System.out.println("Not supported line format for "+ startPoint + " to " + endPoint);
 		}
 
 		if(deltax == 0) {
@@ -140,12 +140,12 @@ public class Draw {
 		int y = point.y;
 
 		if(x < mMinX || x > mMaxX) {
-			System.out.print("x point is outside the canvas for point:" + point);
+			System.out.println("x point is outside the canvas for point:" + point);
 			return false;
 		}
 
 		if(y < mMinY || y > mMaxY) {
-			System.out.print("y point is outside the canvas for point:" + point);
+			System.out.println("y point is outside the canvas for point:" + point);
 			return false;
 		}
 

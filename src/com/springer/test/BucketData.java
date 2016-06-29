@@ -18,6 +18,7 @@ public class BucketData extends ExtractedData{
 			x = Integer.valueOf(c.getNextData());
 		}
 		catch (NumberFormatException e) {
+            System.out.println("Invalid Data in Bucket Fill command");
 			x = 0;
 		}
 

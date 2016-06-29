@@ -17,6 +17,7 @@ public class LineData extends ExtractedData {
 			x = Integer.valueOf(c.getNextData());
 		}
 		catch (NumberFormatException e) {
+            System.out.println("Invalid Data in Line command");
 			x = 0;
 		}
 
@@ -24,6 +25,7 @@ public class LineData extends ExtractedData {
 			y = Integer.valueOf(c.getNextData());
 		}
 		catch (NumberFormatException e) {
+            System.out.println("Invalid Data in Line command");
 			y = 0;
 		}
 

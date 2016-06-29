@@ -12,6 +12,7 @@ public class CanvasData extends ExtractedData {
 			width = Integer.valueOf(c.getNextData());
 		}
 		catch (NumberFormatException e) {
+            System.out.println("Invalid Data in Canvas command");
 			width = 0;
 		}
 
